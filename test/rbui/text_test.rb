@@ -59,10 +59,10 @@ class RBUI::TypographyTest < Minitest::Test
   def test_text_as_different_elements
     %w[p span div label].each do |element|
       output = phlex_context do
-        RBUI::Text(as: element) { "#{element.capitalize}" }
+        RBUI::Text(as: element) { element.capitalize.to_s }
       end
 
-      assert_match("#{element.capitalize}", output)
+      assert_match(element.capitalize.to_s, output)
       assert_match(/<#{element}/, output)
     end
   end
