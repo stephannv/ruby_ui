@@ -44,6 +44,7 @@ module RBUI
         "light" => "font-light",
         "regular" => "font-normal",
         "medium" => "font-medium",
+        "semibold" => "font-semibold",
         "bold" => "font-bold"
       }
     end

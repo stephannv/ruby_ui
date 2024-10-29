@@ -37,8 +37,10 @@ class RBUI::TypographyTest < Minitest::Test
                              "base"
                            elsif size == 1
                              "xs"
+                           elsif size == 2
+                             "sm"
                            else
-                             (size == 2) ? "sm" : "#{size - 1}xl"
+                             ["lg", "xl", "2xl", "3xl", "4xl", "5xl"][size - 4]
                            end}/, output)
     end
   end
