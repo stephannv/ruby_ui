@@ -7,7 +7,7 @@ class RBUI::InlineCodeTest < Minitest::Test
 
   def test_render_inline_code
     output = phlex_context do
-      RBUI::InlineCode { "This is an inline code block" }
+      RBUI::InlineCode() { "This is an inline code block" }
     end
 
     assert_match("This is an inline code block", output)
