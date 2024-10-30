@@ -30,7 +30,7 @@ module RBUI
 
     def class_names
       base_classes = "scroll-m-20 font-bold tracking-tight"
-      size_class = size_to_class[@size || level_to_size[@level] || "6"]
+      size_class = size_to_class[(@size || level_to_size[@level&.to_s] || "6").to_s]
       "#{base_classes} #{size_class}"
     end
 
@@ -42,7 +42,7 @@ module RBUI
         "4" => "text-lg",
         "5" => "text-xl",
         "6" => "text-2xl",
-        "7" => "text-3xl",
+        "7" => "text-3xl lg:text-4xl",
         "8" => "text-4xl",
         "9" => "text-5xl"
       }
@@ -50,10 +50,10 @@ module RBUI
 
     def level_to_size
       {
-        "1" => "6",
-        "2" => "5",
-        "3" => "4",
-        "4" => "3"
+        "1" => "7",
+        "2" => "6",
+        "3" => "5",
+        "4" => "4"
       }
     end
   end
