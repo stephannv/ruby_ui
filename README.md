@@ -47,7 +47,7 @@ bin/rails g rbui:install
 
 ## Documentation 📖
 
-Visit https://rbui.dev/docs to view the full documentation, including:
+Visit https://rbui.dev/docs/introduction to view the full documentation, including:
 
 - Detailed component guides
 - Themes
@@ -63,6 +63,11 @@ RBUI, powered by Phlex, outperforms traditional methods:
 - ERB Templates: 12.08x slower 🐌
 
 _Huge thanks to @KonnorRogers for running these tests_ 🙏
+
+## Importmap notes:
+
+If you run into importmap issues this stackoverflow question might help:
+https://stackoverflow.com/questions/70548841/how-to-add-custom-js-file-to-new-rails-7-project/72855705
 
 ## License 📜
 

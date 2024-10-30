@@ -6,8 +6,6 @@ require "phlex"
 module RBUI
   extend Phlex::Kit
 
-  attr_accessor :namespace
-
   def self.setup
     yield self
     create_namespace_module if namespace
@@ -35,6 +33,14 @@ module RBUI
       end
     end
   end
+
+  def self.namespace
+    @namespace ||= nil
+  end
+
+  def self.namespace=(value)
+    @namespace = value
+  end
 end
 
 # Require the Base class first
@@ -45,6 +51,7 @@ Dir.glob(File.join(__dir__, "rbui", "**", "*.rb")).sort.each { |file| require fi
 
 # If you need to require generators (assuming they're needed)
 if defined?(Rails::Generators)
+  require_relative "generators/rbui/base_generator"
   require_relative "generators/rbui/install/install_generator"
   require_relative "generators/rbui/component_generator"
 end
