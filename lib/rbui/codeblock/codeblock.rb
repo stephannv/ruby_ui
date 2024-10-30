@@ -55,7 +55,13 @@ module RBUI
       div(**attrs) do
         div(class: "after:content-none") do
           pre do
-            raw(safe(FORMATTER.format(lexer.lex(@code))))
+            if Gem::Version.new(Gem.loaded_specs["phlex"].version) < Gem::Version.new("2.0.0")
+              unsafe_raw FORMATTER.format(
+                lexer.lex(@code)
+              )
+            else
+              raw(safe(FORMATTER.format(lexer.lex(@code))))
+            end
           end
         end
       end
