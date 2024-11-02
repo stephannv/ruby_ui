@@ -17,7 +17,14 @@ module RBUI
     end
 
     def view_template(&block)
-      template(data: {rbui__command_target: "content"}) do
+      current_version = Gem.loaded_specs["phlex"].version
+      _template_tag = if current_version.segments[0] >= 2
+        template
+      else
+        template_tag
+      end
+
+      _template_tag(data: {rbui__command_target: "content"}) do
         div(data: {controller: "rbui--command"}) do
           backdrop
           div(**attrs, &block)

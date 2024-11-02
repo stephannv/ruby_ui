@@ -55,12 +55,16 @@ module RBUI
       div(**attrs) do
         div(class: "after:content-none") do
           pre do
-            if Gem::Version.new(Gem.loaded_specs["phlex"].version) < Gem::Version.new("2.0.0")
+            current_version = Gem.loaded_specs["phlex"].version
+
+            if current_version.segments[0] >= 2
+              # Any 2.x version (including betas)
+              raw(safe(FORMATTER.format(lexer.lex(@code))))
+            else
+              # Any 1.x version
               unsafe_raw FORMATTER.format(
                 lexer.lex(@code)
               )
-            else
-              raw(safe(FORMATTER.format(lexer.lex(@code))))
             end
           end
         end
