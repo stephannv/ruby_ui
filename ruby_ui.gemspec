@@ -1,8 +1,8 @@
-require_relative "lib/rbui/version"
+require_relative "lib/ruby_ui/version"
 
 Gem::Specification.new do |s|
   s.name = "ruby_ui"
-  s.version = RBUI::VERSION
+  s.version = RubyUI::VERSION
   s.summary = "RubyUI is a UI Component Library for Ruby developers."
   s.description = "Ruby UI is a UI Component Library for Ruby developers. Built on top of the Phlex Framework."
   s.authors = ["George Kettle"]
