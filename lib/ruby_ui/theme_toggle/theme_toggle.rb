@@ -20,21 +20,21 @@ module RubyUI
 
     def default_attrs
       {
-        data: {controller: "ruby_ui--theme-toggle"}
+        data: {controller: "ruby-ui--theme-toggle"}
       }
     end
 
     def default_light_attrs
       {
         class: "dark:hidden",
-        data: {action: "click->ruby_ui--theme-toggle#setDarkTheme"}
+        data: {action: "click->ruby-ui--theme-toggle#setDarkTheme"}
       }
     end
 
     def default_dark_attrs
       {
         class: "hidden dark:inline-block",
-        data: {action: "click->ruby_ui--theme-toggle#setLightTheme"}
+        data: {action: "click->ruby-ui--theme-toggle#setLightTheme"}
       }
     end
   end

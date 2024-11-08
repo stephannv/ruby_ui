@@ -28,7 +28,7 @@ module RubyUI
       {
         class: "p-3 space-y-4",
         data: {
-          controller: "ruby_ui--calendar",
+          controller: "ruby-ui--calendar",
           ruby_ui__calendar_selected_date_value: @selected_date&.to_s,
           ruby_ui__calendar_format_value: @date_format,
           ruby_ui__calendar_ruby_ui__calendar_input_outlet: @input_id

@@ -18,7 +18,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--hover-card",
+          controller: "ruby-ui--hover-card",
           ruby_ui__hover_card_options_value: @options.to_json
         }
       }

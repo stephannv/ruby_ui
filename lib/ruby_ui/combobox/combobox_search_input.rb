@@ -44,7 +44,7 @@ module RubyUI
           "flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50",
         placeholder: @placeholder,
         data: {
-          action: "input->ruby_ui--combobox#onSearchInput",
+          action: "input->ruby-ui--combobox#onSearchInput",
           ruby_ui__combobox_target: "search"
         },
         autocomplete: "off",

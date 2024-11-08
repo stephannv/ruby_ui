@@ -12,7 +12,7 @@ module RubyUI
       {
         data: {
           ruby_ui__clipboard_target: "trigger",
-          action: "click->ruby_ui--clipboard#copy"
+          action: "click->ruby-ui--clipboard#copy"
         }
       }
     end

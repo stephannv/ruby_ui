@@ -34,7 +34,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          action: "ruby_ui--select#onClick",
+          action: "ruby-ui--select#onClick",
           ruby_ui__select_target: "trigger"
         },
         type: "button",

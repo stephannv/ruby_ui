@@ -43,8 +43,8 @@ module RubyUI
           value: @value,
           ruby_ui__combobox_target: "item",
           ruby_ui__combobox_content_target: "item",
-          controller: "ruby_ui--combobox-item",
-          action: "click->ruby_ui--combobox#onItemSelected"
+          controller: "ruby-ui--combobox-item",
+          action: "click->ruby-ui--combobox#onItemSelected"
         },
         aria_selected: "false"
       }

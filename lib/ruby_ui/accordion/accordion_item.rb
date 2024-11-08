@@ -17,7 +17,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--accordion",
+          controller: "ruby-ui--accordion",
           ruby_ui__accordion_open_value: @open,
           ruby_ui__accordion_rotate_icon_value: @rotate_icon
         },
