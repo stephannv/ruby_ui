@@ -74,8 +74,8 @@ module RubyUI
         # Build the new import path
         new_import_path = new_import_path("./#{relative_path.dirname}/#{file_name}")
 
-        # Create the registration name by dasherizing the component name and prefixing with 'ruby_ui--'
-        registration_name = "ruby_ui--#{component_name.dasherize}"
+        # Create the registration name by dasherizing the component name and prefixing with 'ruby-ui--'
+        registration_name = "ruby-ui--#{component_name.dasherize}"
 
         # Return a hash with import, registration, and export statements
         {

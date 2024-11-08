@@ -40,7 +40,7 @@ module RubyUI
       {
         class: "flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50",
         placeholder: @placeholder,
-        data_action: "input->ruby_ui--command#filter keydown.down->ruby_ui--command#handleKeydown keydown.up->ruby_ui--command#handleKeydown keydown.enter->ruby_ui--command#handleKeydown keydown.esc->ruby_ui--command#dismiss",
+        data_action: "input->ruby-ui--command#filter keydown.down->ruby-ui--command#handleKeydown keydown.up->ruby-ui--command#handleKeydown keydown.enter->ruby-ui--command#handleKeydown keydown.esc->ruby-ui--command#dismiss",
         data_ruby_ui__command_target: "input",
         autocomplete: "off",
         autocorrect: "off",

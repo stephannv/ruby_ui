@@ -11,7 +11,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--form-field"
+          controller: "ruby-ui--form-field"
         },
         class: "space-y-2"
       }

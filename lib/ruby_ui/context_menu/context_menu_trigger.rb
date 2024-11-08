@@ -12,7 +12,7 @@ module RubyUI
       {
         data: {
           ruby_ui__context_menu_target: "trigger",
-          action: "contextmenu->ruby_ui--context-menu#handleContextMenu"
+          action: "contextmenu->ruby-ui--context-menu#handleContextMenu"
         }
       }
     end

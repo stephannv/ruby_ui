@@ -16,7 +16,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--tabs",
+          controller: "ruby-ui--tabs",
           ruby_ui__tabs_active_value: @default
         }
       }

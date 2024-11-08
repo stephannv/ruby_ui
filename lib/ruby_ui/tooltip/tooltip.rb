@@ -16,7 +16,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--tooltip",
+          controller: "ruby-ui--tooltip",
           ruby_ui__tooltip_placement_value: @placement
         },
         class: "group"

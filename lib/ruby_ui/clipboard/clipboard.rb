@@ -30,8 +30,8 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--clipboard",
-          action: "click@window->ruby_ui--clipboard#onClickOutside",
+          controller: "ruby-ui--clipboard",
+          action: "click@window->ruby-ui--clipboard#onClickOutside",
           ruby_ui__clipboard_success_value: @success,
           ruby_ui__clipboard_error_value: @error,
           ruby_ui__clipboard_options_value: @options.to_json

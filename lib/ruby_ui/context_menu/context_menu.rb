@@ -17,7 +17,7 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--context-menu",
+          controller: "ruby-ui--context-menu",
           popover_options_value: @options.to_json
         }
       }

@@ -14,7 +14,7 @@ module RubyUI
         data: {
           ruby_ui__select_target: "input",
           ruby_ui__form_field_target: "input",
-          action: "change->ruby_ui--form-field#onChange invalid->ruby_ui--form-field#onInvalid"
+          action: "change->ruby-ui--form-field#onChange invalid->ruby-ui--form-field#onInvalid"
         }
       }
     end

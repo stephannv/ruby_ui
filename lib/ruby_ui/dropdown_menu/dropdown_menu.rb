@@ -16,8 +16,8 @@ module RubyUI
     def default_attrs
       {
         data: {
-          controller: "ruby_ui--dropdown-menu",
-          action: "click@window->ruby_ui--dropdown-menu#onClickOutside",
+          controller: "ruby-ui--dropdown-menu",
+          action: "click@window->ruby-ui--dropdown-menu#onClickOutside",
           ruby_ui__dropdown_menu_options_value: @options.to_json
         }
       }
